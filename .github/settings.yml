@@ -1,0 +1,106 @@
+---
+repository:
+  # See https://developer.github.com/v3/repos/#edit for all available settings.
+
+  # The name of the repository. Changing this will rename the repository
+  # name: repo-name
+
+  # A short description of the repository that will show up on GitHub
+  description: Ansible Role for Template
+
+  # A list of topics that willl show up on GitHub
+  topics: ansible, ansible-role, template
+
+  # A URL with more information about the repository
+  # homepage: https://example.github.io/
+
+  # Either `true` to make the repository private, or `false` to make it public.
+  private: false
+
+  # Either `true` to enable issues for this repository, `false` to disable them.
+  has_issues: true
+
+  # Either `true` to enable the wiki for this repository, `false` to disable it.
+  has_wiki: true
+
+  # Either `true` to enable downloads for this repository, `false` to disable them.
+  has_downloads: true
+
+  # Updates the default branch for this repository.
+  default_branch: master
+
+  # Either `true` to allow squash-merging pull requests, or `false` to prevent
+  # squash-merging.
+  allow_squash_merge: true
+
+  # Either `true` to allow merging pull requests with a merge commit, or `false`
+  # to prevent merging pull requests with merge commits.
+  allow_merge_commit: true
+
+  # Either `true` to allow rebase-merging pull requests, or `false` to prevent
+  # rebase-merging.
+  allow_rebase_merge: true
+
+  # Labels: define labels for Issues and Pull Requests
+  labels:
+    - name: bug
+      description: Something isn't working
+      color: "#d73a4a"
+
+    - name: documentation
+      description: Improvements or additions to documentation
+      color: "#0075ca"
+
+    - name: duplicate
+      description: This issue or pull request already exists
+      color: "#cfd3d7"
+
+    - name: enhancement
+      description: New feature or request
+      color: "#a2eeef"
+
+    - name: good first issue
+      description: Good for newcomers
+      color: "#7057ff"
+
+    - name: help wanted
+      description: Extra attention is needed
+      color: "#008672"
+
+    - name: invalid
+      description: This doesn't seem right
+      color: "#e4e669"
+
+    - name: question
+      description: Further information is requested
+      color: "#d876e3"
+
+    - name: stale
+      description: Further information is requested
+      color: "#e4e669"
+
+    - name: wontfix
+      description: This issue or pull request will not be resolved
+      color: "#cfd3d7"
+
+    - name: planned
+      description: This issue or pull request is planned for the future
+      color: "#cfd3d7"
+
+    - name: security
+      description: Security issue found
+      color: "#d73a4a"
+
+branches:
+  - name: master
+    protection:
+      required_status_checks:
+        strict: true
+        contexts:
+          - Lint Code Base
+      enforce_admins: true
+
+# milestones:
+#   - title: milestone-title
+#     description: milestone-description
+#     state: open
