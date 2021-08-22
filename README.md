@@ -16,9 +16,12 @@ No dependency on other Ansible Galaxy roles.
 
 ## Example Playbook
 
-    - hosts: servers
-      roles:
-        - { role: username.rolename, x: 42 }
+```yaml
+---
+- hosts: servers
+  roles:
+    - { role: username.rolename, x: 42 }
+```
 
 ## License
 
