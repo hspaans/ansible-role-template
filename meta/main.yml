@@ -1,9 +1,9 @@
 ---
 galaxy_info:
-  role_name: role name
-  author: author name
-  description: role description
-  company: company name (optional)
+  role_name: template
+  author: hspaans
+  description: role template
+  # company: company name (optional)
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
@@ -32,20 +32,18 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - 6
         - 7
         - 8
     - name: Debian
       versions:
-        - 8
-        - 9
         - 10
+        - 11
     - name: Fedora
       versions:
-        - all
+        - 33
+        - 34
     - name: Ubuntu
       versions:
-        - 16.04
         - 18.04
         - 20.04
 
